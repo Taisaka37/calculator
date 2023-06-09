@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.biggest-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgb(94, 94, 94);
+}
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 7em 13em;
+  border-radius: 1em;
+  background-color: rgb(42, 99, 173);
+}
+#interface {
+  
+}
+
+
+.small-container {
+  display: grid;
+}
