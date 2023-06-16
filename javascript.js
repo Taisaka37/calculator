@@ -59,7 +59,7 @@ document.querySelectorAll('.button').forEach(item => {
     }
     if (pressedNumber === '=') {
       if (firstNumber === '') return;
-      firstNumber = operate();
+      firstNumber = operate().toString();
       secondNumber = '';
       operator = '';
     }
@@ -76,7 +76,7 @@ document.querySelectorAll('.button').forEach(item => {
       }
     }
     if (pressedNumber === '.') {
-      if (firstNumber.includes('.') || secondNumber.includes('.')) return;
+      if (firstNumber.includes('.')) return;
       else if (firstNumber !== '') {
         firstNumber += pressedNumber;
       }
